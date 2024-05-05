@@ -41,12 +41,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sabu-ws.app/install/</loc>
+         <loc>https://docs.sabu-ws.app/install/endpoint/</loc>
          <lastmod>2024-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sabu-ws.app/install/endpoint/</loc>
+         <loc>https://docs.sabu-ws.app/install/requirements/</loc>
          <lastmod>2024-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>

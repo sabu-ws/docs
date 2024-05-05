@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#telecharger-le-script-dinstallation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -204,7 +209,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../requirements/" class="md-tabs__link">
           
   
   Installation
@@ -367,11 +372,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prérequis
+    Requirements
   </span>
   
 
@@ -416,6 +421,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Endpoint
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -425,6 +441,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#telecharger-le-script-dinstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Télécharger le script d'installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancer-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lancer l'installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancer l'installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lors-du-processus-dinstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lors du processus d'installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -697,6 +763,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#telecharger-le-script-dinstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Télécharger le script d'installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancer-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lancer l'installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancer l'installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lors-du-processus-dinstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lors du processus d'installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -715,7 +822,20 @@
 
   <h1>Endpoint</h1>
 
-<p>En cours de rédaction...</p>
+<p>Avant de commencer l'installation, veuillez consulter la documentation sur l'<a href="">ajout d'un endpoint</a> sur le panel d'administation.</p>
+<h2 id="telecharger-le-script-dinstallation">Télécharger le script d'installation</h2>
+<pre><code>curl -sSL https://raw.githubusercontent.com/sabu-ws/endpoint/main/install.sh -o install.sh &amp;&amp; chmod +x install.sh
+</code></pre>
+<h2 id="lancer-linstallation">Lancer l'installation</h2>
+<pre><code>sh install.sh
+</code></pre>
+<h3 id="lors-du-processus-dinstallation">Lors du processus d'installation</h3>
+<ul>
+<li>Veuillez renseigner l'adresse IP du serveur SABU</li>
+<li>Veuillez renseigner le nom de l'endpoint (tel que configurer dans le panel d'administration)</li>
+<li>Veuillez renseigner son token</li>
+</ul>
+<p>Une fois l'installation terminée l'endpoint va redémarrer.</p>
 
 
 
