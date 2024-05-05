@@ -1,0 +1,50 @@
+site_name: Documentation SABU
+site_url: https://docs.sabu-ws.app
+site_author: Sabu
+
+# Repository
+repo_name: sabu-ws
+repo_url: https://github.com/sabu-ws/
+
+# Copyright
+copyright: © 2024 SABU. All rights reserved.
+
+# Configuration
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: assets/logo_sabu.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    # - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sabu-ws
+    - icon: fontawesome/solid/globe
+      link: https://looxzy.github.io/
+
+# Page tree
+nav:
+  - Accueil: index.md
+  - Installation:
+    - install/index.md
+    - install/server.md
+    - install/endpoint.md
+  - Configuration:
+    - config/index.md
+  - Développeur:
+    - dev/index.md
+    - dev/versionning.md
+    - dev/disk.md
+    - dev/git.md
+    - dev/raspberry.md
+    - dev/logs.md
