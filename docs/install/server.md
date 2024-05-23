@@ -5,7 +5,7 @@ curl -sSL https://raw.githubusercontent.com/sabu-ws/server/main/install.sh -o in
 
 ## Lancer l'installation
 ```
-sh install.sh
+./install.sh
 ```
 Une fois l'installation terminée la machine va redémarrer.
 
