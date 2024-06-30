@@ -1,50 +1,20 @@
-# General
-Documentation développeur
+# Information
+**[EN] Developer space**  
+!!! quote ""
+    This section of the documentation is intended for developers using the SABU solution. Here you will find information on specific configurations and useful commands that we have referenced to facilitate our future developments.
 
-## Tailwind CSS
-Tailwind CLI build process
-```
-cd /app/static
-npx tailwindcss -i ./src/input.css -o ./css/output.css --watch
-```
+    Please note that these pages contain non-exhaustive documentation that is highly specific to our context. Not all aspects of the system are documented yet, and new pages may be added as needed and as we have availability to write this information.
 
-## Migration DB
-```
-# Si c'est votre première fois ( que vous migrer bien sur la db) faites les choese suivantes:
-cd /sabu
-source sabu-venv/bin/activate
-export FLASK_APP=/sabu/server/server.py
-flask db init
+    Thank you for your understanding.
 
-# Si vous voulez update pour les prochaines fois.
-cd /sabu
-source sabu-venv/bin/activate
-export FLASK_APP=/sabu/server/server.py
-flask db migrate
-flask db upgrade
-```
+    The SABU development team
 
-## Update DB
-```
-cd /sabu/server
-source /sabu/sabu-venv/bin/activate
-flask db upgrade
-```
+**[FR] Espace développeur**  
+!!! quote ""
+    Cette section de la documentation est destinée aux développeurs utilisant la solution SABU. Vous y trouverez des informations sur des configurations spécifiques ainsi que des commandes utiles que nous avons référencées pour faciliter nos futurs développements.
 
-## Erase and create DB
-Erase
-```
-service sabu stop
-su - postgres
-psql
-drop database sabu_db;
-quit
-```
-Create
-```
-createdb sabu_db -O sabu_sql
-service sabu start
-```
+    Veuillez noter que ces pages contiennent une documentation non exhaustive et très spécifique à notre contexte. Tous les aspects du système ne sont pas encore documentés, et de nouvelles pages pourront être ajoutées au fur et à mesure de nos besoins et de notre disponibilité pour rédiger ces informations.
 
-## Media type (MIME)
-> https://www.iana.org/assignments/media-types/media-types.xhtml
+    Nous vous remercions de votre compréhension.
+
+    L'équipe de développement SABU

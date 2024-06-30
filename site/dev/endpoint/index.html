@@ -10,13 +10,13 @@
         <meta name="author" content="Sabu">
       
       
-        <link rel="canonical" href="https://docs.sabu-ws.app/dev/git/">
+        <link rel="canonical" href="https://docs.sabu-ws.app/dev/endpoint/">
       
       
-        <link rel="prev" href="../disk/">
+        <link rel="prev" href="../tailwindcss/">
       
       
-        <link rel="next" href="../raspberry/">
+        <link rel="next" href="../logs/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Git - Documentation SABU</title>
+        <title>Endpoint - Documentation SABU</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git" class="md-skip">
+        <a href="#endpoint" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              Endpoint
             
           </span>
         </div>
@@ -554,7 +554,7 @@
         
   
   <span class="md-ellipsis">
-    General
+    Information
   </span>
   
 
@@ -571,11 +571,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../versionning/" class="md-nav__link">
+      <a href="../db/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Versionning
+    Base de données
   </span>
   
 
@@ -592,11 +592,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../disk/" class="md-nav__link">
+      <a href="../tailwindcss/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Manage disk
+    Tailwind CSS
   </span>
   
 
@@ -626,7 +626,7 @@
           
   
   <span class="md-ellipsis">
-    Git
+    Endpoint
   </span>
   
 
@@ -637,7 +637,7 @@
         
   
   <span class="md-ellipsis">
-    Git
+    Endpoint
   </span>
   
 
@@ -659,27 +659,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pull-or-push" class="md-nav__link">
+  <a href="#login-with-custom-account" class="md-nav__link">
     <span class="md-ellipsis">
-      Pull or Push
+      Login with custom account
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#merge-branch" class="md-nav__link">
+  <a href="#chromium-at-startup" class="md-nav__link">
     <span class="md-ellipsis">
-      Merge branch
+      Chromium at startup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#si-probleme" class="md-nav__link">
+  <a href="#touchscreen-raspberry-pi" class="md-nav__link">
     <span class="md-ellipsis">
-      Si problème
+      Touchscreen Raspberry Pi
     </span>
   </a>
   
@@ -689,27 +689,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../raspberry/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raspberry
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -770,27 +749,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pull-or-push" class="md-nav__link">
+  <a href="#login-with-custom-account" class="md-nav__link">
     <span class="md-ellipsis">
-      Pull or Push
+      Login with custom account
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#merge-branch" class="md-nav__link">
+  <a href="#chromium-at-startup" class="md-nav__link">
     <span class="md-ellipsis">
-      Merge branch
+      Chromium at startup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#si-probleme" class="md-nav__link">
+  <a href="#touchscreen-raspberry-pi" class="md-nav__link">
     <span class="md-ellipsis">
-      Si problème
+      Touchscreen Raspberry Pi
     </span>
   </a>
   
@@ -814,48 +793,108 @@
   
 
 
-<h1 id="git">Git</h1>
-<p>Use git</p>
-<h2 id="pull-or-push">Pull or Push</h2>
-<pre><code>git add . OR git add myfile
-git commit -m « this is m’y commit »
-git pull
+<h1 id="endpoint">Endpoint</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The configurations described on this page were carried out on the <strong>Raspbian</strong> distribution.</p>
+</div>
+<h2 id="login-with-custom-account">Login with custom account</h2>
+<p><div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/lightdm/lightdm.conf
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Set<span class="w"> </span>autologin-user<span class="w"> </span>customUSer<span class="w"> </span><span class="o">(</span>Remplace<span class="w"> </span>customUser<span class="o">)</span>
+</code></pre></div>
+Reboot your endpoint</p>
+<div class="admonition tip">
+<p class="admonition-title">Link</p>
+<p>Source : <a href="https://forums.raspberrypi.com/viewtopic.php?t=113617">https://forums.raspberrypi.com/viewtopic.php?t=113617</a></p>
+</div>
+<h2 id="chromium-at-startup">Chromium at startup</h2>
+<p><div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/.config/wayfire.ini
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>autostart<span class="o">]</span>
+<span class="nv">chromium</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>chromium-browser<span class="w"> </span>https://www.google.com<span class="w"> </span>--kiosk<span class="w"> </span>--noerrdialogs<span class="w"> </span>--disable-infobars<span class="w"> </span>--no-first-run<span class="w"> </span>--ozone-platform<span class="o">=</span>wayland<span class="w"> </span>--enable-features<span class="o">=</span>OverlayScrollbar<span class="w"> </span>--start-maximized
+<span class="nv">screensaver</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span>
+<span class="nv">dpms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Link</p>
+<p>Source : <a href="https://gist.github.com/rampfox/085bf3ffb9ff51e114bf7afdf3ced71b">https://gist.github.com/rampfox/085bf3ffb9ff51e114bf7afdf3ced71b</a></p>
+</div>
+<h2 id="touchscreen-raspberry-pi">Touchscreen Raspberry Pi</h2>
+<ul>
+<li>
+<p>Method #1
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/.config/wayfire.ini
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>output:DSI-1<span class="o">]</span>
+<span class="nv">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>800x480@60029
+<span class="nv">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>,0
+<span class="nv">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">180</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Method #2
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/boot/firmware/config.txt
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># For more options and information see</span>
+<span class="c1"># http://rptl.io/configtxt</span>
+<span class="c1"># Some settings may impact device functionality. See link above for details</span>
 
-if « Already Up To Date »
-{
-  git push
-} 
-else if « conflit »
-{
-  Check and merge local conflit
-  git push
-}
-else
-{
-  Give Up Dude :D
-}
-</code></pre>
-<h2 id="merge-branch">Merge branch</h2>
-<pre><code>git merge and see doc dude
-</code></pre>
-<h2 id="si-probleme">Si problème</h2>
-<pre><code>Erreur lors d'un git pull :
-hint: You have divergent branches and need to specify how to reconcile them.
-hint: You can do so by running one of the following commands sometime before
-hint: your next pull:
-hint: 
-hint:   git config pull.rebase false  # merge
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint: 
-hint: You can replace &quot;git config&quot; with &quot;git config --global&quot; to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
-fatal: Need to specify how to reconcile divergent branches.
+<span class="c1"># Uncomment some or all of these to enable the optional hardware interfaces</span>
+<span class="c1">#dtparam=i2c_arm=on</span>
+<span class="c1">#dtparam=i2s=on</span>
+<span class="c1">#dtparam=spi=on</span>
 
-Si les fichiers n'ont pas étés modifiés par 2 personnes (donc ne sont pas en conflit)(voir dans vscode) -&gt; git merge puis git pull puis git push
-</code></pre>
+<span class="c1"># Enable audio (loads snd_bcm2835)</span>
+<span class="nv">dtparam</span><span class="o">=</span><span class="nv">audio</span><span class="o">=</span>on
+
+<span class="c1"># Additional overlays and parameters are documented</span>
+<span class="c1"># /boot/firmware/overlays/README</span>
+
+<span class="c1"># Automatically load overlays for detected cameras</span>
+<span class="nv">camera_auto_detect</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Automatically load overlays for detected DSI displays</span>
+<span class="nv">display_auto_detect</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Automatically load initramfs files, if found</span>
+<span class="nv">auto_initramfs</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Enable DRM VC4 V3D driver</span>
+<span class="nv">dtoverlay</span><span class="o">=</span>vc4-kms-dsi-7inch
+<span class="c1">#dtoverlay=vc4-kms-dsi-7inch,sizex=400,invx,invy</span>
+<span class="nv">dtoverlay</span><span class="o">=</span>vc4-kms-v3d
+<span class="nv">max_framebuffers</span><span class="o">=</span><span class="m">2</span>
+
+<span class="c1"># Don&#39;t have the firmware create an initial video= setting in cmdline.txt.</span>
+<span class="c1"># Use the kernel&#39;s default instead.</span>
+<span class="nv">disable_fw_kms_setup</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Run in 64-bit mode</span>
+<span class="nv">arm_64bit</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Disable compensation for displays with overscan</span>
+<span class="nv">disable_overscan</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Run as fast as firmware / board allows</span>
+<span class="nv">arm_boost</span><span class="o">=</span><span class="m">1</span>
+
+<span class="o">[</span>cm4<span class="o">]</span>
+<span class="c1"># Enable host mode on the 2711 built-in XHCI USB controller.</span>
+<span class="c1"># This line should be removed if the legacy DWC2 controller is required</span>
+<span class="c1"># (e.g. for USB device mode) or if USB support is not required.</span>
+<span class="nv">otg_mode</span><span class="o">=</span><span class="m">1</span>
+
+<span class="o">[</span>all<span class="o">]</span>
+
+<span class="nv">lcd_rotate</span><span class="o">=</span><span class="m">2</span>
+</code></pre></div></p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Link</p>
+<p>Source : <a href="https://howchoo.com/pi/raspberry-pi-display-rotation/">https://howchoo.com/pi/raspberry-pi-display-rotation/</a></p>
+</div>
 
 
 
@@ -916,8 +955,16 @@ Si les fichiers n'ont pas étés modifiés par 2 personnes (donc ne sont pas en 
       
       
     
-    <a href="https://looxzy.github.io/" target="_blank" rel="noopener" title="looxzy.github.io" class="md-social__link">
+    <a href="https://sabu-ws.github.io/website" target="_blank" rel="noopener" title="sabu-ws.github.io" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:sabu-ws@proton.me" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
     </a>
   
 </div>

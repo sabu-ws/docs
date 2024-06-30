@@ -30,7 +30,15 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sabu-ws
     - icon: fontawesome/solid/globe
-      link: https://looxzy.github.io/
+      link: https://sabu-ws.github.io/website
+    - icon: fontawesome/solid/envelope
+      link: mailto:sabu-ws@proton.me
+
+# Extension (alerte)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 # Page tree
 nav:
@@ -43,8 +51,7 @@ nav:
     - config/index.md
   - Développeur:
     - dev/index.md
-    - dev/versionning.md
-    - dev/disk.md
-    - dev/git.md
-    - dev/raspberry.md
+    - dev/db.md
+    - dev/tailwindcss.md
+    - dev/endpoint.md
     - dev/logs.md

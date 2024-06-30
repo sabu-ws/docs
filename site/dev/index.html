@@ -16,7 +16,7 @@
         <link rel="prev" href="../config/">
       
       
-        <link rel="next" href="versionning/">
+        <link rel="next" href="db/">
       
       
       <link rel="icon" href="../assets/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>General - Documentation SABU</title>
+        <title>Information - Documentation SABU</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#general" class="md-skip">
+        <a href="#information" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              General
+              Information
             
           </span>
         </div>
@@ -559,90 +559,15 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    General
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    General
+    Information
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tailwind-css" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tailwind CSS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#migration-db" class="md-nav__link">
-    <span class="md-ellipsis">
-      Migration DB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-db" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update DB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erase-and-create-db" class="md-nav__link">
-    <span class="md-ellipsis">
-      Erase and create DB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-type-mime" class="md-nav__link">
-    <span class="md-ellipsis">
-      Media type (MIME)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -656,11 +581,11 @@
   
   
     <li class="md-nav__item">
-      <a href="versionning/" class="md-nav__link">
+      <a href="db/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Versionning
+    Base de données
   </span>
   
 
@@ -677,11 +602,11 @@
   
   
     <li class="md-nav__item">
-      <a href="disk/" class="md-nav__link">
+      <a href="tailwindcss/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Manage disk
+    Tailwind CSS
   </span>
   
 
@@ -698,32 +623,11 @@
   
   
     <li class="md-nav__item">
-      <a href="git/" class="md-nav__link">
+      <a href="endpoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Git
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="raspberry/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Raspberry
+    Endpoint
   </span>
   
 
@@ -781,59 +685,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tailwind-css" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tailwind CSS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#migration-db" class="md-nav__link">
-    <span class="md-ellipsis">
-      Migration DB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-db" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update DB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erase-and-create-db" class="md-nav__link">
-    <span class="md-ellipsis">
-      Erase and create DB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-type-mime" class="md-nav__link">
-    <span class="md-ellipsis">
-      Media type (MIME)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -850,48 +701,21 @@
   
 
 
-<h1 id="general">General</h1>
-<p>Documentation développeur</p>
-<h2 id="tailwind-css">Tailwind CSS</h2>
-<p>Tailwind CLI build process</p>
-<pre><code>cd /app/static
-npx tailwindcss -i ./src/input.css -o ./css/output.css --watch
-</code></pre>
-<h2 id="migration-db">Migration DB</h2>
-<pre><code># Si c'est votre première fois ( que vous migrer bien sur la db) faites les choese suivantes:
-cd /sabu
-source sabu-venv/bin/activate
-export FLASK_APP=/sabu/server/server.py
-flask db init
-
-# Si vous voulez update pour les prochaines fois.
-cd /sabu
-source sabu-venv/bin/activate
-export FLASK_APP=/sabu/server/server.py
-flask db migrate
-flask db upgrade
-</code></pre>
-<h2 id="update-db">Update DB</h2>
-<pre><code>cd /sabu/server
-source /sabu/sabu-venv/bin/activate
-flask db upgrade
-</code></pre>
-<h2 id="erase-and-create-db">Erase and create DB</h2>
-<p>Erase</p>
-<pre><code>service sabu stop
-su - postgres
-psql
-drop database sabu_db;
-quit
-</code></pre>
-<p>Create</p>
-<pre><code>createdb sabu_db -O sabu_sql
-service sabu start
-</code></pre>
-<h2 id="media-type-mime">Media type (MIME)</h2>
-<blockquote>
-<p>https://www.iana.org/assignments/media-types/media-types.xhtml</p>
-</blockquote>
+<h1 id="information">Information</h1>
+<p><strong>[EN] Developer space</strong>  </p>
+<div class="admonition quote">
+<p>This section of the documentation is intended for developers using the SABU solution. Here you will find information on specific configurations and useful commands that we have referenced to facilitate our future developments.</p>
+<p>Please note that these pages contain non-exhaustive documentation that is highly specific to our context. Not all aspects of the system are documented yet, and new pages may be added as needed and as we have availability to write this information.</p>
+<p>Thank you for your understanding.</p>
+<p>The SABU development team</p>
+</div>
+<p><strong>[FR] Espace développeur</strong>  </p>
+<div class="admonition quote">
+<p>Cette section de la documentation est destinée aux développeurs utilisant la solution SABU. Vous y trouverez des informations sur des configurations spécifiques ainsi que des commandes utiles que nous avons référencées pour faciliter nos futurs développements.</p>
+<p>Veuillez noter que ces pages contiennent une documentation non exhaustive et très spécifique à notre contexte. Tous les aspects du système ne sont pas encore documentés, et de nouvelles pages pourront être ajoutées au fur et à mesure de nos besoins et de notre disponibilité pour rédiger ces informations.</p>
+<p>Nous vous remercions de votre compréhension.</p>
+<p>L'équipe de développement SABU</p>
+</div>
 
 
 
@@ -952,8 +776,16 @@ service sabu start
       
       
     
-    <a href="https://looxzy.github.io/" target="_blank" rel="noopener" title="looxzy.github.io" class="md-social__link">
+    <a href="https://sabu-ws.github.io/website" target="_blank" rel="noopener" title="sabu-ws.github.io" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:sabu-ws@proton.me" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
     </a>
   
 </div>

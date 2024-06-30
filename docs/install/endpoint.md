@@ -1,18 +1,29 @@
-Avant de commencer l'installation, veuillez consulter la documentation sur l'[ajout d'un endpoint]() sur le panel d'administation.
+!!! warning "Prérequis"
+
+    Avant de commencer l'installation, assurez-vous d'avoir suivi les [prérequis](requirements.md#endpoint) et d'avoir effectué l'[ajout d'un endpoint]() sur le panel d'administation.  
+    Vous devez être en utilisateur **root** pour pouvoir effectuer l'installation de SABU.
 
 ## Télécharger le script d'installation
+Télécharger le script d'installation sur notre dépôt Github :
 ```
 curl -sSL https://raw.githubusercontent.com/sabu-ws/endpoint/main/install.sh -o install.sh && chmod +x install.sh
 ```
 
 ## Lancer l'installation
+Exécuter le script d'installation automatique et suivez les instructions :
 ```
-sh install.sh
+./install.sh
 ```
+??? abstract "Informations à renseigner lors de l'installation"
 
-### Lors du processus d'installation
-- Veuillez renseigner l'adresse IP du serveur SABU
-- Veuillez renseigner le nom de l'endpoint (tel que configurer dans le panel d'administration)
-- Veuillez renseigner son token
+    - **Adresse IP** du serveur SABU
+    - **Nom de l'endpoint** (tel que configuré dans le panel d'administration)
+    - Le **token** (généré lors de l'ajout de l'endpoint sur le panel d'administration)
 
-Une fois l'installation terminée l'endpoint va redémarrer.
+!!! success "Succès"
+
+    Une fois l'installation terminée l'endpoint va redémarrer.
+
+!!! info "Information"
+
+    Après le redémarrage, l'endpoint doit se connecter automatiquement au serveur. (Vous pouvez vérifier le statut sur le panel d'administration)

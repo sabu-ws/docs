@@ -3,7 +3,7 @@
 ## Format des logs
 ```
 Format
-[TYPE] DATE HOUR    HOST (EXEC BY) MODULE ACTION : MESSAGE
+[TYPE] DATE HOUR HOST (EXEC BY) MODULE ACTION : MESSAGE
 
 Example
 [DEBUG] 18/03/2024 21:46:23 sabu-server01 (system) FILES EXEC-SCRIPT : remove_old_files.sh was started to remove files older 10 days for /data
@@ -19,7 +19,7 @@ HOST
 => (output command hostname)
 
 EXEC BY
-=> system (sabu), username (mbinet)
+=> system (sabu), username (user)
 
 MODULE
 => SETTINGS, FILES, ENDPOINT, etc

@@ -2,57 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.sabu-ws.app/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sabu-ws.app/dev/disk/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <loc>https://docs.sabu-ws.app/dev/db/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sabu-ws.app/dev/git/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <loc>https://docs.sabu-ws.app/dev/endpoint/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/logs/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.sabu-ws.app/dev/raspberry/</loc>
-         <lastmod>2024-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.sabu-ws.app/dev/versionning/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <loc>https://docs.sabu-ws.app/dev/tailwindcss/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/install/endpoint/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/install/requirements/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/install/server/</loc>
-         <lastmod>2024-05-05</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
