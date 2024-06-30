@@ -49,10 +49,15 @@ nav:
     - install/endpoint.md
   - Configuration:
     - config/index.md
+    - config/browser.md
+    - config/server.md
+    - config/endpoints.md
+    - config/users.md
+    - config/settings.md
   - Développeur:
     - dev/index.md
     - dev/db.md
+    - dev/yara.md
     - dev/tailwindcss.md
     - dev/endpoint.md
     - dev/logs.md
-    

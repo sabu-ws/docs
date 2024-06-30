@@ -1,6 +1,6 @@
 !!! warning "Prérequis"
 
-    Avant de commencer l'installation, assurez-vous d'avoir suivi les [prérequis](requirements.md#endpoint) et d'avoir effectué l'[ajout d'un endpoint]() sur le panel d'administation.  
+    Avant de commencer l'installation, assurez-vous d'avoir suivi les [prérequis](requirements.md#endpoint) et d'avoir effectué l'[ajout d'un endpoint](../config/endpoints.md) sur le panel d'administation.  
     Vous devez être en utilisateur **root** pour pouvoir effectuer l'installation de SABU.
 
 ## Télécharger le script d'installation

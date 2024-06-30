@@ -11,6 +11,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.sabu-ws.app/config/browser/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sabu-ws.app/config/endpoints/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sabu-ws.app/config/server/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sabu-ws.app/config/settings/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sabu-ws.app/config/users/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.sabu-ws.app/dev/</loc>
          <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
@@ -32,6 +57,11 @@
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/tailwindcss/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.sabu-ws.app/dev/yara/</loc>
          <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>

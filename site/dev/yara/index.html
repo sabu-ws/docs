@@ -10,13 +10,13 @@
         <meta name="author" content="Sabu">
       
       
-        <link rel="canonical" href="https://docs.sabu-ws.app/install/endpoint/">
+        <link rel="canonical" href="https://docs.sabu-ws.app/dev/yara/">
       
       
-        <link rel="prev" href="../server/">
+        <link rel="prev" href="../db/">
       
       
-        <link rel="next" href="../../config/">
+        <link rel="next" href="../tailwindcss/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Endpoint - Documentation SABU</title>
+        <title>Yara Rules - Documentation SABU</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#telecharger-le-script-dinstallation" class="md-skip">
+        <a href="#yara-rules" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Endpoint
+              Yara Rules
             
           </span>
         </div>
@@ -203,13 +203,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../requirements/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../install/requirements/" class="md-tabs__link">
           
   
   Installation
@@ -241,11 +239,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../dev/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   Développeur
@@ -324,30 +324,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -358,7 +353,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Installation
@@ -372,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../requirements/" class="md-nav__link">
+      <a href="../../install/requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../server/" class="md-nav__link">
+      <a href="../../install/server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,28 +406,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Endpoint
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../install/endpoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -441,42 +418,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#telecharger-le-script-dinstallation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Télécharger le script d'installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lancer-linstallation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lancer l'installation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -666,25 +607,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -695,7 +641,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Développeur
@@ -709,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -730,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/db/" class="md-nav__link">
+      <a href="../db/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -748,10 +694,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../dev/yara/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Yara Rules
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -760,6 +726,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-custom-yara-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create custom Yara rules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-remove-yara-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update / Remove Yara rules
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -772,7 +776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/tailwindcss/" class="md-nav__link">
+      <a href="../tailwindcss/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/endpoint/" class="md-nav__link">
+      <a href="../endpoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -814,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/logs/" class="md-nav__link">
+      <a href="../logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,6 +856,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -860,18 +866,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#telecharger-le-script-dinstallation" class="md-nav__link">
+  <a href="#create-custom-yara-rules" class="md-nav__link">
     <span class="md-ellipsis">
-      Télécharger le script d'installation
+      Create custom Yara rules
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lancer-linstallation" class="md-nav__link">
+  <a href="#update-remove-yara-rules" class="md-nav__link">
     <span class="md-ellipsis">
-      Lancer l'installation
+      Update / Remove Yara rules
     </span>
   </a>
   
@@ -895,36 +901,32 @@
   
 
 
-  <h1>Endpoint</h1>
-
-<div class="admonition warning">
-<p class="admonition-title">Prérequis</p>
-<p>Avant de commencer l'installation, assurez-vous d'avoir suivi les <a href="../requirements/#endpoint">prérequis</a> et d'avoir effectué l'<a href="../../config/endpoints/">ajout d'un endpoint</a> sur le panel d'administation.<br />
-Vous devez être en utilisateur <strong>root</strong> pour pouvoir effectuer l'installation de SABU.</p>
-</div>
-<h2 id="telecharger-le-script-dinstallation">Télécharger le script d'installation</h2>
-<p>Télécharger le script d'installation sur notre dépôt Github :
-<div class="highlight"><pre><span></span><code>curl -sSL https://raw.githubusercontent.com/sabu-ws/endpoint/main/install.sh -o install.sh &amp;&amp; chmod +x install.sh
-</code></pre></div></p>
-<h2 id="lancer-linstallation">Lancer l'installation</h2>
-<p>Exécuter le script d'installation automatique et suivez les instructions :
-<div class="highlight"><pre><span></span><code>./install.sh
-</code></pre></div></p>
-<details class="abstract">
-<summary>Informations à renseigner lors de l'installation</summary>
-<ul>
-<li><strong>Adresse IP</strong> du serveur SABU</li>
-<li><strong>Nom de l'endpoint</strong> (tel que configuré dans le panel d'administration)</li>
-<li>Le <strong>token</strong> (généré lors de l'ajout de l'endpoint sur le panel d'administration)</li>
-</ul>
-</details>
-<div class="admonition success">
-<p class="admonition-title">Succès</p>
-<p>Une fois l'installation terminée l'endpoint va redémarrer.</p>
-</div>
+<h1 id="yara-rules">Yara Rules</h1>
 <div class="admonition info">
-<p class="admonition-title">Information</p>
-<p>Après le redémarrage, l'endpoint doit se connecter automatiquement au serveur. (Vous pouvez vérifier le statut sur le panel d'administration)</p>
+<p class="admonition-title">Info</p>
+<p>Files are stored in <code>/sabu/server/core/yararules</code><br />
+The script is stored in <code>/sabu/server/core/yararules/index_gen.sh</code><br />
+(During execution, the script scans subfolders and creates a Yara index for the rules in that folder. Then it creates an index "index.yar" with all the Yara rules.)</p>
+</div>
+<h2 id="create-custom-yara-rules">Create custom Yara rules</h2>
+<ul>
+<li>Create folder with your name or company in <code>/sabu/server/core/yararules</code></li>
+<li>Add your Yara rule in this folder</li>
+<li>Execute script <strong>index_gen.sh</strong> in <code>/sabu/server/core/yararules</code><br />
+(Script update index.yar and create custom XXX_index.yar with your folder name and include yara's files)</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Now your can use your SABU with new Yara Rule.</p>
+</div>
+<h2 id="update-remove-yara-rules">Update / Remove Yara rules</h2>
+<ul>
+<li>Update or remove your Yara rule</li>
+<li>Execute script <strong>index_gen.sh</strong> in <code>/sabu/server/core/yararules</code>  </li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Your Yara rule has been update/remove.</p>
 </div>
 
 

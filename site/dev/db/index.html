@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../tailwindcss/">
+        <link rel="next" href="../yara/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -481,7 +481,112 @@
         
   
   <span class="md-ellipsis">
-    Configuration
+    Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/browser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/endpoints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endpoints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
   </span>
   
 
@@ -659,6 +764,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../yara/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Yara Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../tailwindcss/" class="md-nav__link">
         
   
@@ -794,6 +920,11 @@
 
 
 <h1 id="base-de-donnees">Base de données</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Operations carried out on the database can have <strong>irreversible consequences</strong> in the event of incorrect handling.<br />
+Please perform these actions knowingly or if it has been clearly indicated by the SABU development team.</p>
+</div>
 <h2 id="init-db">Init DB</h2>
 <div class="highlight"><pre><span></span><code>cd /sabu
 source sabu-venv/bin/activate
@@ -806,6 +937,11 @@ source /sabu/sabu-venv/bin/activate
 flask db upgrade
 </code></pre></div>
 <h2 id="erase-and-create-db">Erase and create DB</h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This operation should only be carried out in the event of a major problem with the database.<br />
+<strong>All data will be deleted</strong>.</p>
+</div>
 <p>Erase
 <div class="highlight"><pre><span></span><code>service sabu stop
 su - postgres
