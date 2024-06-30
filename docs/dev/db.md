@@ -1,19 +1,11 @@
 # Base de données
 
-## Migration DB
+## Init DB
 ```
-# Si c'est votre première fois ( que vous migrer bien sur la db) faites les choese suivantes:
 cd /sabu
 source sabu-venv/bin/activate
 export FLASK_APP=/sabu/server/server.py
 flask db init
-
-# Si vous voulez update pour les prochaines fois.
-cd /sabu
-source sabu-venv/bin/activate
-export FLASK_APP=/sabu/server/server.py
-flask db migrate
-flask db upgrade
 ```
 
 ## Update DB

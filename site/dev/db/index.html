@@ -617,9 +617,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#migration-db" class="md-nav__link">
+  <a href="#init-db" class="md-nav__link">
     <span class="md-ellipsis">
-      Migration DB
+      Init DB
     </span>
   </a>
   
@@ -749,9 +749,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#migration-db" class="md-nav__link">
+  <a href="#init-db" class="md-nav__link">
     <span class="md-ellipsis">
-      Migration DB
+      Init DB
     </span>
   </a>
   
@@ -794,19 +794,11 @@
 
 
 <h1 id="base-de-donnees">Base de données</h1>
-<h2 id="migration-db">Migration DB</h2>
-<div class="highlight"><pre><span></span><code># Si c&#39;est votre première fois ( que vous migrer bien sur la db) faites les choese suivantes:
-cd /sabu
+<h2 id="init-db">Init DB</h2>
+<div class="highlight"><pre><span></span><code>cd /sabu
 source sabu-venv/bin/activate
 export FLASK_APP=/sabu/server/server.py
 flask db init
-
-# Si vous voulez update pour les prochaines fois.
-cd /sabu
-source sabu-venv/bin/activate
-export FLASK_APP=/sabu/server/server.py
-flask db migrate
-flask db upgrade
 </code></pre></div>
 <h2 id="update-db">Update DB</h2>
 <div class="highlight"><pre><span></span><code>cd /sabu/server
