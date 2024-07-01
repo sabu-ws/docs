@@ -1,14 +1,16 @@
 # Endpoint
 !!! warning "Warning"
 
-    The configurations described on this page were carried out on the **Raspbian** distribution.
+    The configurations described on this page were carried out on the **Raspbian** distribution.  
+    Make these changes to the user used for the GUI (**kiosk-sabu**).
 
 ## Login with custom account
 ```bash
 nano /etc/lightdm/lightdm.conf
 ```
+Remplace default user :
 ```bash
-Set autologin-user customUSer (Remplace customUser)
+autologin-user=kiosk-sabu
 ```
 Reboot your endpoint
 !!! tip "Link"
@@ -21,7 +23,7 @@ nano ~/.config/wayfire.ini
 ```
 ```bash
 [autostart]
-chromium = chromium-browser https://www.google.com --kiosk --noerrdialogs --disable-infobars --no-first-run --ozone-platform=wayland --enable-features=OverlayScrollbar --start-maximized
+chromium = chromium-browser https://127.0.0.1 --kiosk --noerrdialogs --disable-infobars --no-first-run --ozone-platform=wayland --enable-features=OverlayScrollbar --start-maximized
 screensaver = false
 dpms = false
 ```
@@ -102,3 +104,9 @@ lcd_rotate=2
 !!! tip "Link"
 
     Source : [https://howchoo.com/pi/raspberry-pi-display-rotation/](https://howchoo.com/pi/raspberry-pi-display-rotation/)
+
+## Disable auto-mount in Raspbian GUI
+- 1) Open **File Manager**
+- 2) Click on **Edit** then **preference** then select **Volume Management**
+- 3) **Uncheck** all Auto-mount boxes
+- 4) Reboot
