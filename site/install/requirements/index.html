@@ -1073,8 +1073,12 @@ key: w (write)
 <p><strong>sdb1</strong> : correspond à la partition de votre disque</p>
 </blockquote>
 </li>
-<li>4) Monter le disque :
-<div class="highlight"><pre><span></span><code>mount /dev/sdb1 /mnt/data
+<li>4) Déclarer le disque dans le fichier fstab:
+<div class="highlight"><pre><span></span><code>nano /etc/fstab
+</code></pre></div>
+Ajouter cette ligne :
+<div class="highlight"><pre><span></span><code># SABU MOUNT DATA DISK
+/dev/sdb1       /mnt/data   ext4    defaults        0       2
 </code></pre></div><blockquote>
 <p><strong>/mnt/data</strong> : correspond au point de montage sur votre système</p>
 </blockquote>

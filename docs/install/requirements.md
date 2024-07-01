@@ -60,9 +60,14 @@ key: w (write)
 mkfs.ext4 /dev/sdb1
 ```
 > **sdb1** : correspond à la partition de votre disque
-- 4) Monter le disque :
+- 4) Déclarer le disque dans le fichier fstab:
 ```
-mount /dev/sdb1 /mnt/data
+nano /etc/fstab
+```
+Ajouter cette ligne :
+```
+# SABU MOUNT DATA DISK
+/dev/sdb1       /mnt/data   ext4    defaults        0       2
 ```
 > **/mnt/data** : correspond au point de montage sur votre système
 

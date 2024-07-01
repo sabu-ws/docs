@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.sabu-ws.app/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/browser/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/endpoints/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/server/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/settings/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/config/users/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/db/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/endpoint/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/logs/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/tailwindcss/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/dev/yara/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/install/endpoint/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/install/requirements/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.sabu-ws.app/install/server/</loc>
-         <lastmod>2024-06-30</lastmod>
+         <lastmod>2024-07-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
